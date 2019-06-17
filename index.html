@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    Open command 。 begin work!<br/>
+
+    这是一个html5.<br/> 
+    实时渲染，只能使用默认浏览器，用live-server 启动比较好<br/>
+    <a href=javascript:; onclick="wclick()"> ajax 请求 前后端分离</a>
+    <hr>
+    解决跨域
+    <table></table>
+<script>
+    function wclick(){
+        $.ajax({
+            url:"http://127.0.0.1:8080/data.json",
+            dataType:'json',
+            type:'get',
+            success:function(data){
+                
+            }
+        })
+    }
+</script>
+</body>
+</html>

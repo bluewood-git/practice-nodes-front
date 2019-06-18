@@ -7,16 +7,25 @@
     <title>Document</title>
     <script src="./js/index.js"></script>
     <script src="./js/jquery-3.3.1.js"></script>
+    <script src="http://localhost:8090/demo/index.1.js"></script>
 </head>
 <body>
     Open command 。 begin work!<br/>
 
     这是一个html5.<br/> 
     实时渲染，使用默认浏览器，用live-server 启动比较好<br/>
+    指定浏览器启动: <b style="color: #66ccff"> live-server --browser=chrome</b><br>
+    这里有一个从后台服务器获取的静态文件  <span class="filename" >index.1.js</span> 点击换色 <button onclick="clickMsg()">点击我</button><br>
     <a href=javascript:; onclick="wclick()"> ajax 请求 前后端分离</a>
     <hr>
-    解决跨域
-    <table></table>
+    后端解决跨域
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
 <script>
     function wclick(){
         $.ajax({
@@ -25,7 +34,7 @@
             type:'get',
             success:function(data){
                 // 遍历 json对象数组
-
+                
             }
         })
     }
